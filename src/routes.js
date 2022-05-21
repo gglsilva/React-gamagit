@@ -1,16 +1,16 @@
-import React from "react";
-import { Routes ,Route, BrowserRouter } from "react-router-dom";
+import React from 'react';
+import { Routes , Route, BrowserRouter } from 'react-router-dom';
 
-import Home from "./Home";
-import Repositories from './Repositories';
+import Repositories from './pages/Repositories';
+import Home from './pages/Home';
 
-export default function Rotas(){
+export default function Rotas() {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="repositories/*" element={<Repositories />} />
-            </Routes>
-        </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/repositories' element={<Repositories />} />
+        </Routes>
+      </BrowserRouter>
     )
 }
