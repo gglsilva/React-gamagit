@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import * as S from './styled';
 import { useNavigate } from 'react-router-dom';
+import logo from '../images/logo.png';
 
 function App(props) {
   const navegate = useNavigate();
@@ -28,6 +29,7 @@ function App(props) {
 
   return (
     <S.HomeContainer>
+      <S.Img src={logo} />
       <S.Content>
         <S.Input className="usuarioInput" placeholder="Usuário" value={usuario} onChange={e => setUsuario(e.target.value)} />
         <S.Button type="button" onClick={handlePesquisa}>Pesquisar</S.Button>

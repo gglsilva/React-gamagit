@@ -6,6 +6,7 @@ export const HomeContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
+  gap: 30px;
 `;
 
 
@@ -14,6 +15,10 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const Img = styled.img`
+  max-width: 500px;
 `;
 
 export const Input = styled.input`
